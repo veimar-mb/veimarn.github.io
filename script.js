@@ -1,5 +1,6 @@
 let mainNavLinks = document.querySelectorAll("nav ul li a");
 let mainSections = document.querySelectorAll("container section");
+// let body = document.querySelector("body");
 
 let lastId;
 let cur = [];
@@ -13,7 +14,6 @@ window.addEventListener("scroll", event => {
 		if (section.offsetTop <= fromTop && section.offsetTop + section.offsetHeight > fromTop) {
 			link.classList.add("active");
 		} else {
-			link.classList.remove("active");
-		}
+			link.classList.remove("active");		}
 	});
 });
